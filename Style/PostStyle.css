@@ -1,0 +1,249 @@
+#main-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  overflow: hidden;
+}
+#music-top-bar {
+  position: relative;
+  width: calc(100% - 20px);
+  height: 40px;
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+  background-color: #f4ce14;
+}
+#music-category {
+  position: absolute;
+  right: 10px;
+  font-size: 1.1em;
+  font-family: Dirooz;
+  font-weight: normal;
+}
+#upload-date {
+  position: absolute;
+  left: 10px;
+  font-size: 1.1em;
+  font-family: Dirooz;
+}
+#music-info-section {
+  display: flex;
+  flex-direction: column;
+  font-weight: normal;
+  align-items: center;
+}
+#music-title {
+  font-family: Sepahbod;
+  font-weight: normal;
+  font-size: 1.6em;
+}
+#music-en-title {
+  font-family: SpaceGrotesk;
+  font-weight: normal;
+  font-size: 1em;
+}
+#music-description {
+  font-family: Dirooz;
+  font-weight: normal;
+  font-size: 1.1em;
+}
+#music-cover {
+  width: 400px;
+  height: 400px;
+  margin: 0 auto;
+}
+.badge {
+  font-family: Lemonad;
+  font-size: 1.2em;
+  color: #45474b;
+  text-align: center;
+  width: calc(100% - 20px);
+  background-color: rgba(244, 206, 20, 0.6);
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+#music-lyric-section {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0;
+}
+.music-lyric {
+  font-family: Dirooz;
+  font-weight: normal;
+  font-size: 1em;
+  color: #45474b;
+  margin: 5px 0;
+}
+.rhythm {
+  font-family: Dirooz;
+  font-weight: normal;
+  font-size: 1.2em;
+  color: #45474b;
+  margin: 5px 0;
+}
+.music-lyric::after {
+  content: "♫";
+  margin: 0 8px;
+}
+.music-lyric::before {
+  content: "♫";
+  margin: 0 8px;
+}
+#post-footer {
+  width: 95%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+#online-play-box {
+  display: flex;
+  flex-direction: column;
+  margin: 15px 0;
+}
+#music::-webkit-media-controls-panel {
+  background-color: #45474b;
+}
+#download-box {
+  display: flex;
+  flex-direction: column;
+  margin: 15px 0;
+}
+.download-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 45px;
+  margin-bottom: 10px;
+  border: 0;
+  border-radius: 10px;
+  background-color: #40c057;
+  color: #45474b;
+  font-family: Dirooz;
+  font-size: 1.2em;
+}
+#rating-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0;
+}
+#star-buttons {
+  display: flex;
+}
+.star-button {
+  border: 0;
+  background-color: transparent;
+  margin: 0 5px;
+}
+.star-icon {
+  width: 30px;
+  height: 30px;
+}
+#social-medias {
+  display: flex;
+  list-style: none;
+}
+.social-media-icon {
+  width: 40px;
+  height: 40px;
+  margin: 0 8px;
+}
+
+/*Musi Player*/
+#music-player {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: 0 auto;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #e8e8e8;
+  border: 2px solid #45474b;
+  /* box-shadow: 0px 0px 40px 5px #1b1a1d; */
+}
+#progress-bar-container {
+  display: flex;
+  margin: 10px 0;
+}
+#progress {
+  position: absolute;
+  background-color: #40c057;
+  height: 20px;
+  border-radius: 20px;
+}
+#progress-bar {
+  display: flex;
+  flex-direction: row-reverse;
+  position: relative;
+  width: calc(100% - 70px);
+  height: 20px;
+  margin: 0 5px;
+  border-radius: 20px;
+  background-color: #f4f4f4;
+  cursor: pointer;
+  overflow: hidden;
+}
+#time {
+  font-family: Dirooz;
+  font-size: 1em;
+}
+#controls {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+#sound-control-section {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  bottom: 10px;
+}
+#sound-icon {
+  width: 25px;
+  height: 25px;
+}
+#sound {
+  position: absolute;
+  background-color: #40c057;
+  width: 100%;
+  height: 15px;
+  border-radius: 20px;
+}
+#sound-bar {
+  display: flex;
+  flex-direction: row-reverse;
+  position: relative;
+  width: 110px;
+  height: 15px;
+  margin: 0 5px;
+  border-radius: 20px;
+  background-color: #f4f4f4;
+  cursor: pointer;
+}
+#fast-forward-button {
+  order: 1;
+}
+#fast-backward-button {
+  order: 3;
+}
+#toggle-button {
+  order: 2;
+  margin: 0 10px;
+}
+.control-button {
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+.control-icon {
+  width: 35px;
+  height: 35px;
+}
